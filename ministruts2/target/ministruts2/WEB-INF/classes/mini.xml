@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 所有标签都自己决定 -->
+<mini>
+    <!-- 
+        action 是自定义标签
+          name:我们给类起的名字，用来和URI匹配
+          class：类的全限定名，用于反射生成类
+          method:待访问的方法
+          
+        在内存中采用对象保存这些数据  ActionConfig
+    -->
+    <action name="user" class="edu.swust.ministruts2.action.UserAction" method="execute" >
+        <!--  
+            result 是use的结果视图
+              name  名称
+              type:跳转类型 请求转发：dispatcher      重定向：redirect
+              /index.jsp 跳转路径         
+           	 封装在ResultView中
+        -->
+        <result name="success" type="dispatcher">/index.jsp</result>
+    </action>
+    <action name="book" class="edu.swust.ministruts2.action.BookAction" method="execute" >
+        <result name="error" type="redirect">/ministruts2/error.jsp</result>
+    </action>
+</mini>

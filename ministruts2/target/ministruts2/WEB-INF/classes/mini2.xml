@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 所有标签都自己决定 -->
+<mini>
+    <!-- 
+        action 是自定义标签
+          name:我们给类起的名字，用来和URI匹配
+          class：类的全限定名，用于反射生成类
+          method:待访问的方法
+          
+        在内存中采用对象保存这些数据  ActionConfig
+    -->
+    <action name="user" class="edu.swust.minstruts2.action.UserAction" method="execute" />
+    <action name="book" class="edu.swust.minstruts2.action.BookAction" method="execute" />
+</mini>

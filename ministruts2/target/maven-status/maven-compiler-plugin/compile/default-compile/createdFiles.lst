@@ -1,0 +1,6 @@
+edu\swust\ministruts2\config\ActionConfig.class
+edu\swust\ministruts2\filter\CoreFiter.class
+edu\swust\ministruts2\context\ActionContext.class
+edu\swust\ministruts2\config\ResultView.class
+edu\swust\ministruts2\action\UserAction.class
+edu\swust\ministruts2\action\BookAction.class
